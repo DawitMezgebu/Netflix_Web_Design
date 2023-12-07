@@ -1,8 +1,10 @@
-import { Button, Card, Center, Text, Title } from "@mantine/core";
+import { Button, Card, Center, Image, Modal, Text, Title } from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks";
 import { IconDownload } from "@tabler/icons-react";
 import React from "react";
 
 function ProfessionSection() {
+  const [opened, { open, close }] = useDisclosure(false);
   return (
     <div>
       <div className="flex justify-between space-x-8 px-8 ">
@@ -86,10 +88,14 @@ function ProfessionSection() {
           </div>
           <Button
             class="bg-yellow-700 text-white p-2 px-4 rounded-sm hover:shadow-lg mt-8"
+            onClick={open}
             rightSection={<IconDownload size={14} />}
           >
             Download My Cv
           </Button>
+          <Modal opened={opened} onClose={close} title="Dawit Mezgebu CV">
+            <Image src="./david cv.jpg" />
+          </Modal>
         </div>
       </div>
     </div>
