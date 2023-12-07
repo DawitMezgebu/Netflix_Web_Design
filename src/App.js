@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       <div className="App w-full flex  bg-gray-100 ">
         {location.pathname !== "/login" &&
-          location.pathname !== "/newreset" &&
+          location.pathname !== "/" &&
           location.pathname !== "/newverify" &&
           location.pathname !== "/newchange" &&
           location.pathname !== "/alx" &&
@@ -50,7 +50,7 @@ function App() {
             !showSidebar && "md:w-full"
           } ${
             (location.pathname === "/login" ||
-              location.pathname === "/newreset" ||
+              location.pathname === "/" ||
               location.pathname === "/newverify" ||
               location.pathname === "/newchange" ||
               location.pathname === "/alx" ||
@@ -68,7 +68,7 @@ function App() {
           }`}
         >
           {location.pathname !== "/login" &&
-            location.pathname !== "/newreset" &&
+            location.pathname !== "/" &&
             location.pathname !== "/newverify" &&
             location.pathname !== "/newchange" &&
             location.pathname !== "/alx" &&
