@@ -9,6 +9,7 @@ import { ImHome } from "react-icons/im";
 import "@mantine/core/styles.css";
 import DropMenu from "./Menu";
 import Notification from "./Notification";
+import { Select } from "@mantine/core";
 function Sidebar() {
   const sidebar = document.querySelector("aside");
   const maxSidebar = document.querySelector(".max");
@@ -84,6 +85,14 @@ function Sidebar() {
 
         <div class="flex-none h-full text-center flex items-center justify-center">
           <div class="flex space-x-3 items-center ">
+            <Select
+              placeholder="Select Project"
+              data={[
+                "project management",
+                "hospital management",
+                "school management",
+              ]}
+            />
             <Notification />
             <DropMenu />
           </div>

@@ -14,9 +14,10 @@ function Notification() {
           {/* <Button> */}
           <div className="w-8 h-8 flex ">
             <Indicator
-              inline
-              size={12}
-              offset={3}
+              size={16}
+              label="3"
+              processing
+              offset={2}
               position="top-end"
               color="red"
               withBorder

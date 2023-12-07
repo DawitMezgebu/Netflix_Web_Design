@@ -22,6 +22,12 @@
     "jsx": "preserve"
   },
 
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "src/component/Project/tabsss.jsx",
+    "src/component/Project/tabsss.jsx",
+    "src/component/Project/TabsDemo.jsx"
+  ],
   "exclude": ["node_modules"]
 }
