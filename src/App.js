@@ -85,7 +85,8 @@ function App() {
               <div className=" border-b s h-16 "></div>
             )}
           <Routes>
-            <Route exact path="/" element={<Dashboard />} />
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/Dashboard" element={<Dashboard />} />
             <Route exact path="/login" element={<Login />} />
             <Route exact path="/projectlist" element={<ProjectList />} />
             <Route exact path="/navbars" element={<Nav />} />
