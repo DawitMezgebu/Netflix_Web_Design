@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Center, Image, Text, Title } from "@mantine/core";
+import { Button, Center, Image, Modal, Text, Title } from "@mantine/core";
 import { IconArrowAutofitRight } from "@tabler/icons-react";
 import Nav from "../Basic/Nav";
 import {
@@ -11,7 +11,17 @@ import {
   FaTelegramPlane,
 } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
+import HireMe from "../Hire me/HireMe";
+import { useDisclosure } from "@mantine/hooks";
+import { useNavigate } from "react-router-dom";
 function Home() {
+  const [opened, { open, close }] = useDisclosure(false);
+  const navigate = useNavigate();
+
+  function about() {
+    navigate("/about");
+  }
+
   return (
     <div className="">
       <div className="absolute inset-0 px-20 pt-8">
@@ -48,17 +58,23 @@ function Home() {
 
           <Center className="mt-10 space-x-4">
             <Button
-              class="bg-yellow-700 text-white p-2 px-4 rounded-sm hover:shadow-lg"
+              onClick={about}
+              color="rgba(209, 141, 6, 1)"
               rightSection={<IconArrowAutofitRight size={14} />}
             >
               More About Me
             </Button>
             <Button
-              class="bg-gray-200 text-black p-2 px-4 rounded-sm hover:shadow-none"
+              color="gray"
+              className="text-black p-2 px-4 rounded-sm hover:shadow-none"
               rightSection={<IconArrowAutofitRight size={14} />}
+              onClick={open}
             >
               Hire Me
             </Button>
+            <Modal opened={opened} onClose={close} title="Hiring Process">
+              <HireMe />
+            </Modal>
           </Center>
           <Center className="mt-7">
             <Text>Join Our Social Media</Text>
