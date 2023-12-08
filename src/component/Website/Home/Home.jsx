@@ -10,7 +10,7 @@ import {
   FaLinkedinIn,
   FaTelegramPlane,
 } from "react-icons/fa";
-
+import { Typewriter } from "react-simple-typewriter";
 function Home() {
   return (
     <div className="">
@@ -20,8 +20,21 @@ function Home() {
       <div className=" flex justify-between h-screen ">
         <div className="bg-gray-50 w-full ">
           <div className="mt-32">
-            <Text class="text-center mb-4 text-yellow-600 font-bold">
-              SOFTWARE ENGINEER, UI/UX & GRAPHICS DESIGNER
+            <Text class="text-center mb-4 text-yellow-600 font-bold text-2xl">
+              <Typewriter
+                words={[
+                  "Software Engineer",
+                  "WordPress Developer",
+                  "Graphics Designer",
+                  "UI Designer",
+                ]}
+                loop={100}
+                cursor
+                cursorStyle="_"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
             </Text>
             <Title
               size="h1"
