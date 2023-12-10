@@ -1,7 +1,6 @@
 import { Tabs } from "@mantine/core";
 import React from "react";
 import UiProject from "./UiProject";
-import { useNavigate } from "react-router-dom";
 
 function Projects() {
   return (
