@@ -77,7 +77,7 @@ function Home() {
             </Modal>
           </Center>
           <Center className="mt-7">
-            <Text>Join Our Social Media</Text>
+            <Text>Social Media</Text>
           </Center>
           <Center className="mt-7 space-x-4">
             <FaLinkedinIn

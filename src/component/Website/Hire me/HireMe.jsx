@@ -5,11 +5,11 @@ import { Typewriter } from "react-simple-typewriter";
 function HireMe() {
   return (
     <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
-      <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+      <div class="p-6 space-y-4 md:space-y-5 sm:p-8">
         <h1 class="text-md mb-4 font-medium leading-tight tracking-tight text-gray-900 md:text-md dark:text-white">
           Thanks For Hiring Me as
           <br></br>
-          <Text class=" mb-4 text-yellow-600 font-normal text-md">
+          <Text class=" mb-2 text-yellow-600 font-normal text-md">
             <Typewriter
               words={[
                 "Software Engineer",
@@ -26,7 +26,7 @@ function HireMe() {
             />
           </Text>
         </h1>
-        <form class="space-y-4 md:space-y-6" action="#">
+        <form class="space-y-4 md:space-y-3" action="#">
           <div>
             <label
               for="email"

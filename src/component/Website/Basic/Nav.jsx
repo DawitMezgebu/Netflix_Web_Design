@@ -2,16 +2,12 @@ import { Burger } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import React from "react";
 import { Menu, rem } from "@mantine/core";
-import {
-  IconSearch,
-  IconPhoto,
-  IconMessageCircle,
-  IconTrash,
-  IconArrowsLeftRight,
-  IconHome,
-  IconPresentationAnalytics,
-} from "@tabler/icons-react";
+import { IconTrash, IconArrowsLeftRight, IconHome } from "@tabler/icons-react";
 import { useNavigate } from "react-router-dom";
+import { CgProfile } from "react-icons/cg";
+import { FaListUl } from "react-icons/fa";
+import { MdAddTask } from "react-icons/md";
+import { IoBagSharp } from "react-icons/io5";
 
 function Nav() {
   const [opened, { toggle }] = useDisclosure();
@@ -22,6 +18,13 @@ function Nav() {
   }
   function home() {
     navigate("/home");
+  }
+  function service() {
+    navigate("/whatwedo");
+  }
+
+  function project() {
+    navigate("/projects");
   }
   return (
     <div className="  flex justify-between">
@@ -52,33 +55,31 @@ function Nav() {
             <Menu.Item
               onClick={about}
               leftSection={
-                <IconPresentationAnalytics
-                  style={{ width: rem(14), height: rem(14) }}
-                />
+                <CgProfile style={{ width: rem(14), height: rem(14) }} />
               }
             >
               About
             </Menu.Item>
             <Menu.Item
               leftSection={
-                <IconMessageCircle
-                  style={{ width: rem(14), height: rem(14) }}
-                />
+                <FaListUl style={{ width: rem(14), height: rem(14) }} />
               }
+              onClick={service}
             >
               Services
             </Menu.Item>
             <Menu.Item
               leftSection={
-                <IconPhoto style={{ width: rem(14), height: rem(14) }} />
+                <MdAddTask style={{ width: rem(14), height: rem(14) }} />
               }
             >
               Experiences
             </Menu.Item>
             <Menu.Item
               leftSection={
-                <IconSearch style={{ width: rem(14), height: rem(14) }} />
+                <IoBagSharp style={{ width: rem(14), height: rem(14) }} />
               }
+              onClick={project}
             >
               Works
             </Menu.Item>

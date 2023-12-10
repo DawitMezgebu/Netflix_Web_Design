@@ -1,13 +1,12 @@
 import { Button, Center, Title } from "@mantine/core";
 import React from "react";
 import { MdArrowForwardIos } from "react-icons/md";
-import ProfessionSection from "./ProfessionSection";
-import Nav from "../Basic/Nav";
-import Skills from "./Skills";
-import Testimonial from "./Testimonial";
 import { useNavigate } from "react-router-dom";
+import Nav from "../Basic/Nav";
+import Work from "./Work";
+import Pricing from "./Pricing";
 
-function About() {
+function Whatwedo() {
   const navigate = useNavigate();
 
   function about() {
@@ -16,6 +15,7 @@ function About() {
   function home() {
     navigate("/home");
   }
+
   return (
     <div>
       <div className="px-20 pt-8">
@@ -36,24 +36,21 @@ function About() {
             rightSection={<MdArrowForwardIos size={14} />}
             onClick={about}
           >
-            About Us
+            Service
           </Button>
         </Center>
         <Center className="mt-4">
-          <Title class="lg:text-5xl font-bold">About Us</Title>
+          <Title class="lg:text-5xl font-bold">What I Do</Title>
         </Center>
       </div>
-      <div className="mt-28">
-        <ProfessionSection />
+      <div>
+        <Work />
       </div>
       <div className="mt-32">
-        <Skills />
-      </div>
-      <div className="mt-32">
-        <Testimonial />
+        <Pricing />
       </div>
     </div>
   );
 }
 
-export default About;
+export default Whatwedo;

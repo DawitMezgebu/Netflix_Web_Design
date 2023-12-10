@@ -9,6 +9,8 @@ import ProjectList from "./component/Project/ProjectList";
 import Nav from "./component/Website/Basic/Nav";
 import Home from "./component/Website/Home/Home";
 import About from "./component/Website/About us/About";
+import Whatwedo from "./component/Website/What we do/Whatwedo";
+import Portfolio from "./component/Website/portfolios/Portfolio";
 
 function App() {
   const location = useLocation();
@@ -28,6 +30,8 @@ function App() {
           location.pathname !== "/navbars" &&
           location.pathname !== "/home" &&
           location.pathname !== "/about" &&
+          location.pathname !== "/whatwedo" &&
+          location.pathname !== "/projects" &&
           location.pathname !== "404" &&
           location.pathname !== "/500" &&
           location.pathname !== "/maintainance" &&
@@ -60,6 +64,8 @@ function App() {
               location.pathname === "/navbars" ||
               location.pathname === "/home" ||
               location.pathname === "/about" ||
+              location.pathname === "/whatwedo" ||
+              location.pathname === "/projects" ||
               location.pathname === "404" ||
               location.pathname === "/500" ||
               location.pathname === "/maintainance" ||
@@ -78,6 +84,8 @@ function App() {
             location.pathname !== "/navbars" &&
             location.pathname !== "/home" &&
             location.pathname !== "/about" &&
+            location.pathname !== "/whatwedo" &&
+            location.pathname !== "/projects" &&
             location.pathname !== "404" &&
             location.pathname !== "/500" &&
             location.pathname !== "/maintainance" &&
@@ -92,6 +100,8 @@ function App() {
             <Route exact path="/navbars" element={<Nav />} />
             <Route exact path="/home" element={<Home />} />
             <Route exact path="/about" element={<About />} />
+            <Route exact path="/whatwedo" element={<Whatwedo />} />
+            <Route exact path="/projects" element={<Portfolio />} />
           </Routes>
         </div>
       </div>

@@ -9,7 +9,7 @@ function ProfessionSection() {
     <div>
       <div className="flex justify-between space-x-8 px-8 ">
         <div className="flex flex-col space-y-6">
-          <div className="flex flex-row space-x-8">
+          <div className="flex flex-row space-x-6">
             <Card
               shadow="sm"
               padding="lg"
@@ -66,11 +66,17 @@ function ProfessionSection() {
           <Text class=" mb-4 text-yellow-600 font-bold">About Me</Text>
           <Title size="h1" fw={700} class=" font-black lg:text-4xl  ">
             {" "}
-            A UI/UX Designer & Web Developer Based in Ethiopia
+            A Front End Developer, WordPress Developer, UI/UX Designer &
+            Graphics Designer Based in Ethiopia
           </Title>
           <Text class="mt-8">
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia, there live the blind texts.
+            Dynamic and highly skilled Front End Development with a strong
+            background in UI/UX design and graphics design. Proven ability to
+            create innovative and visually appealing user interfaces while
+            excelling in the development of robust and scalable software
+            solutions. Adept at collaborating with cross-functional teams to
+            deliver high-quality products that meet user and business
+            requirements.
           </Text>
           <div className="grid grid-cols-4 space-y-6 mt-8">
             <Text class="font-bold ">Name:</Text>
