@@ -26,6 +26,9 @@ function Nav() {
   function project() {
     navigate("/projects");
   }
+  function blog() {
+    navigate("/blog");
+  }
   return (
     <div className="  flex justify-between">
       <div className="font-black">Dawit Logo</div>
@@ -90,6 +93,7 @@ function Nav() {
                   style={{ width: rem(14), height: rem(14) }}
                 />
               }
+              onClick={blog}
             >
               Blog
             </Menu.Item>

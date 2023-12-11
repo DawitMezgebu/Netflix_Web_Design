@@ -11,6 +11,7 @@ import Home from "./component/Website/Home/Home";
 import About from "./component/Website/About us/About";
 import Whatwedo from "./component/Website/What we do/Whatwedo";
 import Portfolio from "./component/Website/portfolios/Portfolio";
+import Blog from "./component/Website/blog/Blog";
 
 function App() {
   const location = useLocation();
@@ -32,6 +33,7 @@ function App() {
           location.pathname !== "/about" &&
           location.pathname !== "/whatwedo" &&
           location.pathname !== "/projects" &&
+          location.pathname !== "/blog" &&
           location.pathname !== "404" &&
           location.pathname !== "/500" &&
           location.pathname !== "/maintainance" &&
@@ -66,6 +68,7 @@ function App() {
               location.pathname === "/about" ||
               location.pathname === "/whatwedo" ||
               location.pathname === "/projects" ||
+              location.pathname === "/blog" ||
               location.pathname === "404" ||
               location.pathname === "/500" ||
               location.pathname === "/maintainance" ||
@@ -86,6 +89,7 @@ function App() {
             location.pathname !== "/about" &&
             location.pathname !== "/whatwedo" &&
             location.pathname !== "/projects" &&
+            location.pathname !== "/blog" &&
             location.pathname !== "404" &&
             location.pathname !== "/500" &&
             location.pathname !== "/maintainance" &&
@@ -102,6 +106,7 @@ function App() {
             <Route exact path="/about" element={<About />} />
             <Route exact path="/whatwedo" element={<Whatwedo />} />
             <Route exact path="/projects" element={<Portfolio />} />
+            <Route exact path="/blog" element={<Blog />} />
           </Routes>
         </div>
       </div>
