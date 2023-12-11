@@ -1,6 +1,7 @@
 import { Tabs } from "@mantine/core";
 import React from "react";
 import UiProject from "./UiProject";
+import GraphicsProject from "./Graphics";
 
 function Projects() {
   return (
@@ -21,7 +22,7 @@ function Projects() {
           <UiProject />
         </Tabs.Panel>
         <Tabs.Panel value="Graphics Design">
-          <UiProject />
+          <GraphicsProject />
         </Tabs.Panel>
         <Tabs.Panel value="Website">
           <UiProject />
