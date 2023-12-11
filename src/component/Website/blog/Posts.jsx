@@ -66,21 +66,19 @@ function Posts() {
                   </Button>
                 </div>
                 <Modal opened={opened} onClose={close} title="Blog">
-                  <div class="">
-                    <img
-                      src={filds.imgurl}
-                      alt="aby"
-                      className="w-fit h-fit rounded-lg"
-                    />
-                    <Group justify="space-between" mt="md" mb="xs">
-                      <Text class="font-bold">{filds.department} </Text>
-                      <Badge color="rgba(191, 113, 11, 1)">News</Badge>
-                    </Group>
+                  <img
+                    src={filds.imgurl}
+                    alt="aby"
+                    className="w-fit h-fit rounded-lg"
+                  />
+                  <Group justify="space-between" mt="md" mb="xs">
+                    <Text class="font-bold">{filds.department} </Text>
+                    <Badge color="rgba(191, 113, 11, 1)">News</Badge>
+                  </Group>
 
-                    <Text class="mb-3 font-normal  dark:text-gray-400">
-                      {filds.caption}
-                    </Text>
-                  </div>
+                  <Text class="mb-3 font-normal  dark:text-gray-400">
+                    {filds.caption}
+                  </Text>
                 </Modal>
               </div>
             );
