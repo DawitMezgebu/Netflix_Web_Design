@@ -96,11 +96,11 @@ function Skills() {
         </div>
         <div>
           <Text size="sm" mb="md">
-            Netlify
+            Figma
           </Text>
           <Slider
             color="rgba(214, 111, 9, 1)"
-            defaultValue={90}
+            defaultValue={95}
             labelAlwaysOn
           />
         </div>
