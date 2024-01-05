@@ -109,7 +109,7 @@ function Home() {
             />
           </Center>
         </div>
-        <div className="bg-yellow-700 w-full">
+        <div className="bg-yellow-700 w-full hidden sm:block ">
           <div className="w-2/3  h-auto ">
             <Image src="./coverpg.png" />
           </div>

@@ -12,14 +12,14 @@ function ContactTab() {
             <span className="inline-flex mr-2">
               <FaUser className="text-yellow-600 hover:text-yellow-700 " />
             </span>
-            <span>Dawit Mezgebu Yemane</span>
+            <span>Dawit Mezgebu</span>
           </div>
         </li>
         <li class="mb-4">
           <span className="inline-flex mr-2 ">
             <MdEmail className="text-yellow-600 hover:text-yellow-700 " />
           </span>
-          <span>dawitmezgebu22@gmail.com</span>
+          <span className="">dawitmezgebu22@gmail.com</span>
         </li>
         <li class="mb-4">
           <span className="inline-flex mr-2">

@@ -12,7 +12,7 @@ function Projects() {
         orientation="vertical"
         className="space-x-28 "
       >
-        <Tabs.List className="space-y-8 lg:ml-28">
+        <Tabs.List className="space-y-8 lg:ml-20">
           <Tabs.Tab value="UI Design">UI Design</Tabs.Tab>
           <Tabs.Tab value="Graphics Design">Graphics Design</Tabs.Tab>
           <Tabs.Tab value="Website">Website</Tabs.Tab>

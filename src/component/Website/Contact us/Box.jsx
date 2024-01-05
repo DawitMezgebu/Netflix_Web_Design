@@ -11,15 +11,14 @@ function Box() {
       <div class="min-h-screen bg-gray-100 text-gray-900 flex justify-center">
         <div class="max-w-screen-xl m-0 sm:m-10  shadow sm:rounded-lg flex justify-center flex-1">
           <div class="lg:w-1/2 xl:w-5/12 p-6 sm:p-6">
-            <div className="font-bold text-3xl">Contact us</div>
             <div class="mt-12 flex flex-col ">
               <Tabs
-                orientation="vertical"
+                orientation="horizontal"
                 defaultValue="gallery"
                 color="rgba(191, 113, 11, 1)"
-                className="space-x-8 "
+                className=""
               >
-                <Tabs.List className="space-y-4">
+                <Tabs.List className="space-y-4 space-x-6 mb-10 ">
                   <Tabs.Tab
                     value="gallery"
                     leftSection={<IconPhoto style={iconStyle} />}
@@ -56,11 +55,6 @@ function Box() {
                     type="text"
                     placeholder="Name"
                   />
-                  {/* <Input
-                    variant="unstyled"
-                    placeholder="Name"
-                    className="bg-gray-100 border-b border-yellow-700 rounded-lg"
-                  /> */}
                   <input
                     class="w-full px-8 py-4 rounded-lg mt-2 border border-yellow-700 text-sm bg-none bg-gray-100"
                     type="email"

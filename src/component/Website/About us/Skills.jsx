@@ -3,13 +3,13 @@ import React from "react";
 
 function Skills() {
   return (
-    <div>
+    <div className="px-4">
       <Center className="mt-4 flex flex-col">
         <Text class="text-yellow-600">skills</Text>
 
         <Title class="lg:text-4xl font-bold">My Skills</Title>
       </Center>
-      <div className="grid grid-cols-3 mt-12 space-x-6 px-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 mt-8 space-y-6 md:space-y-0 md:space-x-6 md:px-10 ">
         <div>
           <Text size="sm" mb="md">
             Html
@@ -41,7 +41,7 @@ function Skills() {
           />
         </div>
       </div>
-      <div className="grid grid-cols-3 mt-8 space-x-6 px-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 mt-8 space-y-6 md:space-y-0 md:space-x-6 md:px-10">
         <div>
           <Text size="sm" mb="md">
             React Js
@@ -73,7 +73,7 @@ function Skills() {
           />
         </div>
       </div>
-      <div className="grid grid-cols-3 mt-8 space-x-6 px-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 mt-8 space-y-6 md:space-y-0 md:space-x-6 md:px-10">
         <div>
           <Text size="sm" mb="md">
             Github
@@ -105,7 +105,7 @@ function Skills() {
           />
         </div>
       </div>
-      <div className="grid grid-cols-3 mt-8 space-x-6 px-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 mt-8 space-y-6 md:space-y-0 md:space-x-6 md:px-10">
         <div>
           <Text size="sm" mb="md">
             Adobe Photoshop

@@ -18,10 +18,7 @@ function SocialMedia() {
             <span className="inline-flex mr-2">
               <FaTelegram className="text-yellow-600 hover:text-yellow-700 " />
             </span>
-            <a
-              href="https://www.facebook.com/profile.php?id=61551149005409"
-              target=" _blank"
-            >
+            <a href="https://t.me/DavidM12" target=" _blank">
               Telegram
             </a>
           </div>
@@ -32,7 +29,7 @@ function SocialMedia() {
               <FaLinkedin className="text-yellow-600 hover:text-yellow-700 " />
             </span>
             <a
-              href="https://www.facebook.com/profile.php?id=61551149005409"
+              href="https://www.linkedin.com/in/dawit-mezgebu-46264a205/"
               target=" _blank"
             >
               LinkedIn
@@ -56,10 +53,7 @@ function SocialMedia() {
           <span className="inline-flex mr-2">
             <FaInstagram className="text-yellow-600 hover:text-yellow-700 " />
           </span>
-          <a
-            href="https://www.linkedin.com/in/gebrheir-humaniterian-022453296"
-            target=" _blank"
-          >
+          <a href="https://www.instagram.com/dawit_m12/" target=" _blank">
             Instagram
           </a>
         </li>
@@ -79,10 +73,7 @@ function SocialMedia() {
             <span className="inline-flex mr-2">
               <FaGithub className="text-yellow-600 hover:text-yellow-700 " />
             </span>
-            <a
-              href="https://www.facebook.com/profile.php?id=61551149005409"
-              target=" _blank"
-            >
+            <a href="https://github.com/DawitMezgebu" target=" _blank">
               Github
             </a>
           </div>
@@ -92,10 +83,7 @@ function SocialMedia() {
             <span className="inline-flex mr-2">
               <FaBehance className="text-yellow-600 hover:text-yellow-700 " />
             </span>
-            <a
-              href="https://www.facebook.com/profile.php?id=61551149005409"
-              target=" _blank"
-            >
+            <a href="https://www.behance.net/dawitmezgebu" target=" _blank">
               Behance
             </a>
           </div>
