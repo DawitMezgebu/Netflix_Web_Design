@@ -1,47 +1,72 @@
-import { Center, Pagination, Text } from "@mantine/core";
+import { Center, Pagination } from "@mantine/core";
 import React from "react";
 
 function UiProject() {
   const profession = [
     {
       id: 1,
-      department: "/portfolio/18.jpg",
-      caption: "Abyssina Bank",
+      department: "/portfolio/front.png",
     },
     {
       id: 2,
-      department: "/portfolio/19.jpg",
-      caption: "Abyssina Bank",
+      department: "/portfolio/Sign ins.png",
     },
     {
       id: 3,
-      department: "/portfolio/20.jpg",
-      caption: "Abyssina Bank",
+      department: "/portfolio/Homescreen.png",
     },
     {
       id: 4,
-      department: "/portfolio/20.jpg",
-      caption: "Abyssina Bank",
+      department: "/portfolio/pay.png",
     },
     {
       id: 5,
-      department: "/portfolio/1.jpg",
-      caption: "Ahadu Bank",
+      department: "/portfolio/scan.png",
     },
     {
       id: 6,
-      department: "/portfolio/2.jpg",
-      caption: "Ahadu Bank",
+      department: "/portfolio/transaction.png",
     },
     {
       id: 7,
-      department: "/portfolio/3.jpg",
-      caption: "Ahadu Bank",
+      department: "/portfolio/profiles.png",
     },
+
     {
       id: 8,
-      department: "/portfolio/20.jpg",
-      caption: "Abyssina Bank",
+      department: "/portfolio/option.png",
+    },
+    {
+      id: 9,
+      department: "/portfolio/welcome.png",
+    },
+    {
+      id: 10,
+      department: "/portfolio/sign in.png",
+    },
+    {
+      id: 11,
+      department: "/portfolio/Verify.png",
+    },
+    {
+      id: 12,
+      department: "/portfolio/Login page.png",
+    },
+    {
+      id: 13,
+      department: "/portfolio/service.png",
+    },
+    {
+      id: 14,
+      department: "/portfolio/Order.png",
+    },
+    {
+      id: 15,
+      department: "/portfolio/profile.png",
+    },
+    {
+      id: 16,
+      department: "/portfolio/Payment.png",
     },
   ];
   return (
@@ -57,10 +82,6 @@ function UiProject() {
                     alt="aby"
                     className="w-fit h-fit rounded-lg"
                   />
-
-                  <Text class="mb-3 font-normal  dark:text-gray-400">
-                    {filds.caption}
-                  </Text>
                 </div>
               </div>
             );

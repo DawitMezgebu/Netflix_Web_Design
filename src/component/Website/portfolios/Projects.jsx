@@ -9,13 +9,12 @@ function Projects() {
       <Tabs
         color="rgba(191, 113, 11, 1)"
         defaultValue="UI Design"
-        orientation="vertical"
-        className="space-x-28 "
+        orientation="horizontal"
+        className=" "
       >
-        <Tabs.List className="space-y-8 lg:ml-20">
+        <Tabs.List className="space-x-4 lg:ml-20">
           <Tabs.Tab value="UI Design">UI Design</Tabs.Tab>
           <Tabs.Tab value="Graphics Design">Graphics Design</Tabs.Tab>
-          <Tabs.Tab value="Website">Website</Tabs.Tab>
         </Tabs.List>
 
         <Tabs.Panel value="UI Design">
@@ -23,9 +22,6 @@ function Projects() {
         </Tabs.Panel>
         <Tabs.Panel value="Graphics Design">
           <GraphicsProject />
-        </Tabs.Panel>
-        <Tabs.Panel value="Website">
-          <UiProject />
         </Tabs.Panel>
       </Tabs>
     </div>

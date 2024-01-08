@@ -1,4 +1,4 @@
-import { Center, Pagination, Text } from "@mantine/core";
+import { Center, Pagination } from "@mantine/core";
 import React from "react";
 
 function GraphicsProject() {
@@ -6,42 +6,67 @@ function GraphicsProject() {
     {
       id: 1,
       department: "/portfolio/10.jpg",
-      caption: "Abyssina Bank",
     },
     {
       id: 2,
       department: "/portfolio/02.jpg",
-      caption: "Abyssina Bank",
     },
     {
       id: 3,
-      department: "/portfolio/005.jpg",
-      caption: "Abyssina Bank",
+      department: "/portfolio/18.jpg",
     },
     {
       id: 4,
       department: "/portfolio/11.jpg",
-      caption: "Abyssina Bank",
     },
     {
       id: 5,
       department: "/portfolio/22.jpg",
-      caption: "Ahadu Bank",
     },
-    {
-      id: 6,
-      department: "/portfolio/011.jpg",
-      caption: "Ahadu Bank",
-    },
+
     {
       id: 7,
       department: "/portfolio/005.jpg",
-      caption: "Ahadu Bank",
     },
     {
       id: 8,
       department: "/portfolio/20.jpg",
-      caption: "Abyssina Bank",
+    },
+    {
+      id: 9,
+      department: "/portfolio/2.jpg",
+    },
+    {
+      id: 10,
+      department: "/portfolio/18w.jpg",
+    },
+    {
+      id: 11,
+      department: "/portfolio/givaway 2.jpg",
+    },
+    {
+      id: 12,
+      department: "/portfolio/ghf.jpg",
+    },
+    {
+      id: 13,
+      department: "/portfolio/jhg.jpg",
+    },
+    {
+      id: 14,
+      department: "/portfolio/1s.png",
+    },
+    {
+      id: 15,
+      department: "/portfolio/afro.jpg",
+    },
+    {
+      id: 16,
+      department: "/portfolio/Untitled-17.png",
+    },
+    {
+      id: 17,
+      department: "/portfolio/3s.jpg",
     },
   ];
   return (
@@ -55,12 +80,8 @@ function GraphicsProject() {
                   <img
                     src={filds.department}
                     alt="aby"
-                    className="w-fit h-fit rounded-lg"
+                    className="w-fit h-fit rounded-lg  "
                   />
-
-                  <Text class="mb-3 font-normal  dark:text-gray-400">
-                    {filds.caption}
-                  </Text>
                 </div>
               </div>
             );
