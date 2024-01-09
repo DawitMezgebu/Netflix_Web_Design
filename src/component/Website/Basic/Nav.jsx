@@ -23,6 +23,9 @@ function Nav() {
   function service() {
     navigate("/whatwedo");
   }
+  function experience() {
+    navigate("/experiences");
+  }
 
   function project() {
     navigate("/projects");
@@ -76,6 +79,7 @@ function Nav() {
               Services
             </Menu.Item>
             <Menu.Item
+              onClick={experience}
               leftSection={
                 <MdAddTask style={{ width: rem(14), height: rem(14) }} />
               }

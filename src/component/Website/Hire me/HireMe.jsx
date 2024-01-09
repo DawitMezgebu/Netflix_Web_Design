@@ -71,6 +71,7 @@ function HireMe() {
               <option>WordPress Development</option>
               <option>UI Design</option>
               <option>Graphics Design</option>
+              <option>Digital Marketing</option>
             </select>
           </div>
 
@@ -83,7 +84,7 @@ function HireMe() {
           <p class="text-sm font-light text-gray-500 dark:text-gray-400">
             If you want to contact {""}
             <a
-              href="."
+              href="./contact"
               class="font-medium text-primary-600 hover:underline dark:text-primary-500"
             >
               Click Me 🖐
