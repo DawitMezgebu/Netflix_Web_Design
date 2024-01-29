@@ -1,11 +1,37 @@
-import { Button, Tabs, rem } from "@mantine/core";
+import { Button, Notification, Tabs, rem } from "@mantine/core";
 import { IconArrowRight, IconPhoto, IconSettings } from "@tabler/icons-react";
-import React from "react";
+import React, { useRef, useState } from "react";
 import ContactTab from "./ContactTab";
 import SocialMedia from "./SocialMedia";
+import emailjs from "@emailjs/browser";
 
 function Box() {
   const iconStyle = { width: rem(12), height: rem(12) };
+  const form = useRef();
+  const [isLoading, setIsLoading] = useState(false);
+  const [iserror, setIserror] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_f622b8l",
+        "template_11svqan",
+        form.current,
+        "rCUt5O0rwpAifdUbn"
+      )
+      .then(
+        (result) => {
+          setIsLoading(true);
+          console.log(result.text);
+        },
+        (error) => {
+          setIserror(true);
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <div className="">
       <div class="min-h-screen bg-gray-100 text-gray-900 flex justify-center">
@@ -49,30 +75,61 @@ function Box() {
                   </div>
                 </div>
 
-                <div class="mx-auto max-w-xs">
+                <form class="mx-auto max-w-xs" ref={form} onSubmit={sendEmail}>
                   <input
                     class="w-full px-8 py-4 rounded-lg   border border-yellow-700 text-sm bg-gray-100"
                     type="text"
                     placeholder="Name"
+                    name="user_name"
                   />
                   <input
                     class="w-full px-8 py-4 rounded-lg mt-2 border border-yellow-700 text-sm bg-none bg-gray-100"
                     type="email"
                     placeholder="email"
+                    name="user_email"
                   />
                   <textarea
                     class="w-full px-8 py-4 rounded-lg mt-2 border border-yellow-700 text-sm  mb-4 bg-gray-100"
                     type="text"
+                    name="message"
                     placeholder="send message"
                   />
+                  {isLoading ? (
+                    <div className="animate__animated animate__bounceInLeft">
+                      <Notification
+                        color="green"
+                        title="your message successful"
+                      >
+                        We are thrilled to inform you that your email has been
+                        successfully sent.
+                      </Notification>
+                    </div>
+                  ) : (
+                    ""
+                  )}
+                  {iserror ? (
+                    <div className="animate__animated animate__bounceInLeft">
+                      <Notification
+                        color="red"
+                        title="your message was not successful"
+                      >
+                        We are thrilled to inform you that your email has been
+                        was not successfully sent.
+                      </Notification>
+                    </div>
+                  ) : (
+                    ""
+                  )}
                   <Button
                     rightSection={<IconArrowRight size={14} />}
                     fullWidth
+                    type="submit"
+                    value="send"
                     color="rgba(209, 141, 6, 1)"
                   >
                     Send Message
                   </Button>
-                </div>
+                </form>
               </div>
             </div>
           </div>

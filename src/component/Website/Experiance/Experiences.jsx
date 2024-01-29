@@ -16,7 +16,7 @@ function Experiences() {
   const profession = [
     {
       id: 1,
-      imgurl: "2022-2024",
+      imgurl: "2022 - now",
       department: "Front End Dev't",
       location: "Herani Tech",
       caption:
@@ -24,36 +24,36 @@ function Experiences() {
     },
     {
       id: 2,
-      imgurl: "2014-2015",
+      imgurl: "2022 - now",
       department: "WordPress Dev't",
-      location: "Bachelor's Degree",
+      location: "Freelancer",
       caption:
         "expertise in crafting engaging and functional websites using WordPress.",
     },
     {
       id: 3,
-      imgurl: "2014-2015",
+      imgurl: "2022 - now",
       department: "Ui Design",
-      location: "Bachelor's Degree",
+      location: "Herani Tech",
       caption:
         "user-friendly interfaces for both web and mobile platforms. focus on usability and accessibility.  ",
     },
     {
       id: 4,
-      imgurl: "2014-2015",
+      imgurl: "2020-2022",
       department: "Graphics Design",
-      location: "Bachelor's Degree",
+      location: "Africa 118 inc",
       caption:
         "deliver high-quality graphics that meet client objectives and brand standards.",
     },
-    {
-      id: 4,
-      imgurl: "2014-2015",
-      department: "Digital Marketing",
-      location: "Bachelor's Degree",
-      caption:
-        "deliver high-quality graphics that meet client objectives and brand standards.",
-    },
+    // {
+    //   id: 4,
+    //   imgurl: "2020 - now",
+    //   department: "Digital Marketing",
+    //   location: "Freelancer",
+    //   caption:
+    //     "deliver high-quality graphics that meet client objectives and brand standards.",
+    // },
   ];
   return (
     <div>

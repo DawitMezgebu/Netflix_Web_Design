@@ -80,10 +80,15 @@ function Home() {
             <Text>Social Media</Text>
           </Center>
           <Center className="mt-7 space-x-4">
-            <FaLinkedinIn
-              className="bg-yellow-700 hover:shadow-xl text-white p-2 rounded-lg"
-              style={{ width: "28px", height: "auto" }}
-            />
+            <a
+              href="https://www.linkedin.com/in/gebrheir-humaniterian-022453296"
+              target=" _blank"
+            >
+              <FaLinkedinIn
+                className="bg-yellow-700 hover:shadow-xl text-white p-2 rounded-lg"
+                style={{ width: "28px", height: "auto" }}
+              />
+            </a>
             <FaBehance
               className="bg-yellow-700 text-white p-2 rounded-lg"
               style={{ width: "28px", height: "auto" }}

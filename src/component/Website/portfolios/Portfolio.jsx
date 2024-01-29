@@ -11,8 +11,8 @@ function Portfolio() {
   function home() {
     navigate("/home");
   }
-  function experiance() {
-    navigate("/porfolio");
+  function work() {
+    navigate("/projects");
   }
   return (
     <div>
@@ -32,7 +32,7 @@ function Portfolio() {
           <Button
             class="bg-gray-200 text-black p-1 px-2 rounded-sm hover:shadow-none"
             rightSection={<MdArrowForwardIos size={14} />}
-            onClick={experiance}
+            onClick={work}
           >
             Work
           </Button>
