@@ -14,6 +14,7 @@ import { Typewriter } from "react-simple-typewriter";
 import HireMe from "../Hire me/HireMe";
 import { useDisclosure } from "@mantine/hooks";
 import { useNavigate } from "react-router-dom";
+import "animate.css";
 function Home() {
   const [opened, { open, close }] = useDisclosure(false);
   const navigate = useNavigate();
@@ -30,6 +31,14 @@ function Home() {
       <div className=" flex justify-between h-screen ">
         <div className="bg-gray-50 w-full ">
           <div className="mt-32">
+            <Title
+              size="h1"
+              fw={700}
+              class="text-center font-black lg:text-8xl mb-6"
+            >
+              {" "}
+              I'm Dawit <br></br> Mezgebu
+            </Title>
             <Text class="text-center mb-4 text-yellow-600 font-bold text-2xl">
               <Typewriter
                 words={[
@@ -46,14 +55,6 @@ function Home() {
                 delaySpeed={1000}
               />
             </Text>
-            <Title
-              size="h1"
-              fw={700}
-              class="text-center font-black lg:text-8xl  "
-            >
-              {" "}
-              I'm Dawit <br></br> Mezgebu
-            </Title>
           </div>
 
           <Center className="mt-10 space-x-4">
@@ -77,7 +78,7 @@ function Home() {
             </Modal>
           </Center>
           <Center className="mt-7">
-            <Text>Social Media</Text>
+            <Text>Follow Me</Text>
           </Center>
           <Center className="mt-7 space-x-4">
             <a
@@ -116,7 +117,10 @@ function Home() {
         </div>
         <div className="bg-yellow-700 w-full hidden sm:block ">
           <div className="w-2/3  h-auto ">
-            <Image src="./coverpg.png" />
+            <Image
+              src="./coverpg.png"
+              className="animate__animated animate__fadeInTopRight"
+            />
           </div>
         </div>
       </div>
