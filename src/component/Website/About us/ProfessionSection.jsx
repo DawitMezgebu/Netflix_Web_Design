@@ -97,15 +97,15 @@ function ProfessionSection() {
           </div>
         </div> */}
         <div className="">
-          <Title
+          {/* <Title
             size="h1"
             fw={700}
             class=" font-black lg:text-2xl text-center "
           >
             {" "}
             A Front End Developer, WordPress Developer, UI/UX Designer &
-            Graphics Designer Based in Ethiopia
-          </Title>
+            Graphics Designer 
+          </Title> */}
           <Text class="mt-8 text-center">
             Dynamic and highly skilled Front End Development with a strong
             background in UI/UX design and graphics design. Proven ability to
