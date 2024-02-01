@@ -3,6 +3,7 @@ import React from "react";
 import Nav from "../Basic/Nav";
 import { MdArrowForwardIos } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import { IconStack } from "@tabler/icons-react";
 
 function Experiences() {
   const navigate = useNavigate();
@@ -41,7 +42,7 @@ function Experiences() {
     {
       id: 4,
       imgurl: "2020-2022",
-      department: "Graphics Design",
+      department: "Graphics and Ui Designer",
       location: "Africa 118 inc",
       caption:
         "deliver high-quality graphics that meet client objectives and brand standards.",
@@ -97,7 +98,9 @@ function Experiences() {
 
                     <Group justify="space-between" mt="md" mb="xs">
                       <Text class="font-bold">{filds.department} </Text>
-                      <Badge color="rgba(191, 113, 11, 1)">News</Badge>
+                      <Badge color="rgba(191, 113, 11, 1)">
+                        <IconStack />
+                      </Badge>
                     </Group>
                     <Text class="text-start mb-3 font-normal  dark:text-gray-400">
                       {filds.location}

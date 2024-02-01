@@ -4,8 +4,9 @@ import { MdArrowForwardIos } from "react-icons/md";
 import ProfessionSection from "./ProfessionSection";
 import Nav from "../Basic/Nav";
 import Skills from "./Skills";
-import Testimonial from "./Testimonial";
+// import Testimonial from "./Testimonial";
 import { useNavigate } from "react-router-dom";
+import Clients from "./Clients";
 
 function About() {
   const navigate = useNavigate();
@@ -49,8 +50,11 @@ function About() {
       <div className="mt-32">
         <Skills />
       </div>
-      <div className="mt-32">
+      {/* <div className="mt-32">
         <Testimonial />
+      </div> */}
+      <div className="mt-32">
+        <Clients />
       </div>
     </div>
   );

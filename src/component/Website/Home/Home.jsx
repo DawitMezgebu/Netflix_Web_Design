@@ -42,7 +42,7 @@ function Home() {
             <Text class="text-center mb-4 text-yellow-600 font-bold text-2xl">
               <Typewriter
                 words={[
-                  "Software Engineer",
+                  "Front End Developer",
                   "WordPress Developer",
                   "Graphics Designer",
                   "UI Designer",
@@ -107,6 +107,7 @@ function Home() {
               className="bg-yellow-700 text-white p-2 rounded-lg"
               style={{ width: "28px", height: "auto" }}
             />
+
             <FaInstagram
               color="white"
               variant="filled"

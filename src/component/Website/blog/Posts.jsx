@@ -1,6 +1,7 @@
 import { Badge, Button, Group, Modal, Text } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import React from "react";
+import "./slide.style.css";
 
 function Posts() {
   const [opened, { open, close }] = useDisclosure(false);
@@ -34,6 +35,7 @@ function Posts() {
         "deliver high-quality graphics that meet client objectives and brand standards.",
     },
   ];
+
   return (
     <div>
       <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
@@ -85,6 +87,35 @@ function Posts() {
           })}
         </div>
       </div>
+
+      <section class="carousel">
+        <h2 class="categories__title">My List</h2>
+        <div class="carousel__container">
+          {profession.map((filds) => {
+            return (
+              <div class="carousel-item">
+                <img
+                  class="carousel-item__img"
+                  src={filds.imgurl}
+                  alt="people"
+                />
+                <div class="carousel-item__details">
+                  <div class="controls">
+                    <span class="fas fa-play-circle"></span>
+                    <span class="fas fa-plus-circle"></span>
+                  </div>
+                  <h5 class="carousel-item__details--title">
+                    {filds.department}
+                  </h5>
+                  <h6 class="carousel-item__details--subtitle">
+                    Date and Duration
+                  </h6>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
     </div>
   );
 }

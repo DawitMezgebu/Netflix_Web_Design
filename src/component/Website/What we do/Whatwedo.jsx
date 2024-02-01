@@ -4,7 +4,7 @@ import { MdArrowForwardIos } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import Nav from "../Basic/Nav";
 import Work from "./Work";
-import Pricing from "./Pricing";
+// import Pricing from "./Pricing";
 
 function Whatwedo() {
   const navigate = useNavigate();
@@ -46,9 +46,9 @@ function Whatwedo() {
       <div>
         <Work />
       </div>
-      <div className="mt-32">
+      {/* <div className="mt-32">
         <Pricing />
-      </div>
+      </div> */}
     </div>
   );
 }
