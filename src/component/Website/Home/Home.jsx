@@ -107,19 +107,17 @@ function Home() {
               className="bg-yellow-700 text-white p-2 rounded-lg"
               style={{ width: "28px", height: "auto" }}
             />
-
             <FaInstagram
               color="white"
-              variant="filled"
               className="bg-yellow-700 p-2 rounded-lg"
               style={{ width: "28px", height: "auto" }}
             />
           </Center>
         </div>
-        <div className="bg-yellow-700 w-full hidden sm:block ">
-          <div className="w-2/3  h-auto ">
+        <div className="bg-yellow-600 w-full hidden sm:block ">
+          <div className="w-[76%]  h-fit ">
             <Image
-              src="./coverpg.png"
+              src="./portfolio/sign-in.svg"
               className="animate__animated animate__fadeInTopRight"
             />
           </div>
