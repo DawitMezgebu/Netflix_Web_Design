@@ -2,7 +2,7 @@ import { Burger } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import React from "react";
 import { Menu, rem } from "@mantine/core";
-import { IconArrowsLeftRight, IconHome } from "@tabler/icons-react";
+import { IconHome } from "@tabler/icons-react";
 import { useNavigate } from "react-router-dom";
 import { CgProfile } from "react-icons/cg";
 import { FaListUl } from "react-icons/fa";

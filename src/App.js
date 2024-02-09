@@ -16,6 +16,7 @@ import Contact from "./component/Website/Contact us/Contact";
 import Experiences from "./component/Website/Experiance/Experiences";
 import Donate from "./component/Donation/Donate";
 import OnCash from "./component/Donation/SuccessFull";
+import Moviepage from "./component/Film site/Moviepage";
 
 function App() {
   const location = useLocation();
@@ -41,6 +42,7 @@ function App() {
           location.pathname !== "/experiences" &&
           location.pathname !== "/contact" &&
           location.pathname !== "/ticket" &&
+          location.pathname !== "/movie" &&
           location.pathname !== "404" &&
           location.pathname !== "/500" &&
           location.pathname !== "/maintainance" &&
@@ -79,6 +81,7 @@ function App() {
               location.pathname === "/experiences" ||
               location.pathname === "/contact" ||
               location.pathname === "/ticket" ||
+              location.pathname === "/movie" ||
               location.pathname === "404" ||
               location.pathname === "/500" ||
               location.pathname === "/maintainance" ||
@@ -124,6 +127,7 @@ function App() {
             <Route exact path="/experiences" element={<Experiences />} />
             <Route exact path="/ticket" element={<Donate />} />
             <Route exact path="/successfull" element={<OnCash />} />
+            <Route exact path="/movie" element={<Moviepage />} />
           </Routes>
         </div>
       </div>
